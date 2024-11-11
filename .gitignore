@@ -1,0 +1,5 @@
+#ignore all subfolders named below with double astrik(**) at any level
+**/logs/
+**/temp/
+**/obj/
+**/bin/
