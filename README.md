@@ -2,7 +2,7 @@
 Ecommerce MicroServices - DotNet 8
 
 # 💫 About Me:
-I'm a Senior Software Developer, and working to build ecommerce website more robust and responsive to the heavy responses.
+I'm a Senior Software Developer, and working to build ecommerce website more robust and responsive to handle heavy requests.
 
 
 ## 🌐 Socials:
