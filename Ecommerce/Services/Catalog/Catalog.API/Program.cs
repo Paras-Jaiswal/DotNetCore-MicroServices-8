@@ -54,7 +54,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c => { c.DocumentTitle = "Catalog API Documentation"; });
 }
 
 app.UseAuthorization();

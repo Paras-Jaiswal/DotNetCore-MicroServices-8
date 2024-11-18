@@ -50,6 +50,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "CacheSettings__ConnectionString=basketdb:6379"
+      - "GrpcSettings__DiscountUrl=http://discount.api:8080"  
     depends_on:
       - basketdb
     ports:
@@ -66,7 +67,8 @@ services:
          condition: service_healthy
     ports:
       - "8002:8080"
-      
+ 
+
   pgadmin:
     container_name: pgadmin
     environment:
