@@ -60,7 +60,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.UseSwagger();
-    app.UseSwaggerUI(c => { c.DocumentTitle = "Basket API Documentation"; );
+    app.UseSwaggerUI(c => { c.DocumentTitle = "Basket API Documentation"; });
 }
 
 app.UseAuthorization();
