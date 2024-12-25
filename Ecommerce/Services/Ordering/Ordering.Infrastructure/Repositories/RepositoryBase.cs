@@ -46,8 +46,5 @@ namespace Ordering.Infrastructure.Repositories
             _dbContext.Set<T>().Remove(entity);
             await _dbContext.SaveChangesAsync();
         }
-
-
-       
     }
 }
