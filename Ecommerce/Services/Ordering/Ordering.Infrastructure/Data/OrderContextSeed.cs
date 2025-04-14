@@ -5,11 +5,13 @@ namespace Ordering.Infrastructure.Data
 {
     public class OrderContextSeed
     {
-        public static async Task SeedAsync(OrderContext orderContext, ILogger<OrderContext> logger)
+        public static async Task SeedAsync(OrderContext orderContext, ILogger<OrderContextSeed> logger)
         {
             if (!orderContext.Orders.Any())
             {
-                //orderContext.Orders.AddRange(Ge)
+                orderContext.Orders.AddRange(GetOrders());
+                await orderContext.SaveChangesAsync();
+                logger.LogInformation($"Ordering Database: {typeof(OrderContext).Name} seeded!!!");
             }
         }
 
