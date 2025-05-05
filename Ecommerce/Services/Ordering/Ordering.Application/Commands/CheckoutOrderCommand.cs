@@ -4,7 +4,6 @@ namespace Ordering.Application.Commands
 {
     public class CheckoutOrderCommand : IRequest<int>
     {
-        public int Id { get; set; }
         public string? UserName { get; set; }
         public decimal? TotalPrice { get; set; }
         public string? FirstName { get; set; }
